@@ -1,0 +1,119 @@
+body{
+    background-color: black;
+}
+.navbar {
+    z-index: 999; /* Asegura que el navbar esté por encima de otras capas */
+    position:fixed;
+    display: flex;
+    justify-content: space-between; 
+    background-color:rgba(0, 0, 0, 0); 
+  
+    
+   
+}
+
+.navbar-brand img {
+    width: 7rem;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: smaller;
+    font-weight: 300;
+    
+ }
+ .contenedor{
+    display: flex;
+    align-items: center;
+    margin-left: 9rem;
+    margin-right: 40rem;
+ }
+
+ .header{
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: auto;
+    align-items: end;
+    justify-content: end;
+    
+
+ }
+ .img-fluid{
+    display: inline-block;
+    width: 2.5rem;
+    
+    
+ }
+
+ .carrousel{
+    width: 100%;
+    height: 60rem; /* Altura del carrusel, ajusta según tus necesidades */
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    position: relative;
+    z-index: 1; 
+ }
+
+ .div-qs{
+    width: 100%;
+    height: 35rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+   
+
+
+ }
+ .t1{
+    
+    padding: 6rem;
+    font-size: x-large;
+ }
+
+
+
+.card{
+    background-color: rgb(19, 149, 224);
+    width: 50%;
+    height: 22rem;
+    margin: 20px;
+    border-radius: 0%;
+
+
+}
+
+.img-card{
+    height: 13rem;
+    width: 100%;
+}
+ .txt-cont{
+    background-color: black;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+
+ }
+ .txt1{
+    width:100%;
+    height: 50rem;
+    color: white;
+    flex: 1;
+    margin: 20px;
+    text-align: start;
+
+    
+   
+ }
+
+ p{
+    width: 80%;
+    margin: 30px;
+    margin-top: 5px;
+ }
+
