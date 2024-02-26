@@ -147,7 +147,7 @@ body{
    
 }
 
-.btn{
+.btn1{
    flex: 1;
 
    margin: 8px;
@@ -158,9 +158,12 @@ body{
    border-radius: 0;
    text-align: left;
    align-self: center;
+   font-family: "Montserrat", sans-serif;
 
    
 }
+
+
 
 .footer{
    margin-top: 10rem;
@@ -188,3 +191,8 @@ body{
 .fa-brands{
    margin: 8px;
 }
+.btn2{
+   background-color: rgba(0, 0, 0, 0);
+   color: white;
+}
+
