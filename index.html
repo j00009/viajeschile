@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -15,8 +16,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!--JS-->
-    <script src="assets/js/jquery-3.7.1.min.js"></script> 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Jquery-->
@@ -26,7 +25,7 @@
 <body>
 
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg text" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg text fixed-top" data-bs-theme="dark">
         <div class="container-fluid" >
             <div class="contenedor">
                 <a class="navbar-brand etiqueta-i" href="#">
@@ -147,7 +146,6 @@
           <div class="div-qs">
             <h1 class="t1">DESTACADOS</i>
               <button class="btn btn-outline-light btn2" class="btn btn-light" id="mostrarBoton" href="#" data-bs-toggle="tooltip" data-bs-title="Presiona para ver tarjetas de destinos ocultas"><i class="fa-solid fa-eye" ></i></button>  
-              <script src="assets/js/script.js"></script>
             </h1>
              <div class="container">
                 <div class="d-flex justify-content-between">
@@ -207,10 +205,10 @@
                 <label class="d-flex align-items-left">Asunto</label>
                 <input type="text" class="form-control" id="asunto">
                 <label class="d-flex align-items-left">Mensaje</label>
-                <input type="text" class="form-control" id="mensaje">
+                <input type="text" class="form-control display" id="mensaje">
                 <div class="cont">
-          
-                  <button id="btnEnviar" class="btn btn-primary d-flex text-center btn1" data-toggle="modal" data-target="#exampleModal" type="submit" disabled>Enviar</button>
+                  <button id="btnEnviar" class="btn btn-primary d-flex text-center btn1"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>Enviar</button>
+
                   
                 </div>
               </div>
@@ -223,42 +221,25 @@
     </div>
 
   </div>
-<!--Verificar campos vacios-->
-  <script>
-        function verificarCampos() {
-        var campo1Value = document.getElementById('nombre').value;
-        var campo2Value = document.getElementById('asunto').value;
-        var campo3Value = document.getElementById('mensaje').value;
-        if (campo1Value.trim() !== '' && campo2Value.trim() !== ''&& campo3Value.trim() !== '') {
-          document.getElementById('btnEnviar').disabled = false;
-        } else {
-          document.getElementById('btnEnviar').disabled = true;
-        }
-      }
-      document.getElementById('nombre').addEventListener('input', verificarCampos);
-      document.getElementById('asunto').addEventListener('input', verificarCampos);
-      document.getElementById('mensaje').addEventListener('input', verificarCampos);
-  </script>
-
 
 <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Datos recepcionados
-        </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Datos recepcionados correctamente
+      </div>
+      <div class="modal-footer">
+
       </div>
     </div>
   </div>
+</div>
 
-</section>
 
 <!--Footer-->
 <section>
@@ -271,6 +252,8 @@
     </div>
 
 </section>
-    
+<script src="assets/js/script.js"></script>
+
+
 </body>
 </html>
