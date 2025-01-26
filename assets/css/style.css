@@ -1,184 +1,189 @@
-body{
-    background-color: black;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
+
+html,
+body {
+   height: 100%;
+
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   background-color: black;
+}
+
 .navbar {
-    z-index: 999; /* Asegura que el navbar esté por encima de otras capas */
-    position:fixed;
-    display: flex;
-    justify-content: space-between; 
-    background-color:rgba(0, 0, 0, 0); 
-  
-    
-   
+   z-index: 999;
+
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgba(0, 0, 0, 0);
+
+
+
 }
 
 .navbar-brand img {
-    width: 7rem;
+   width: 7rem;
 }
 
-.text{
-    display: flex;
-    justify-content: space-between;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-size: smaller;
-    font-weight: 300;
-    
- }
- .contenedor{
-    display: flex;
-    align-items: center;
-    margin-left: 9rem;
-    margin-right: 40rem;
- }
+.text {
+   display: flex;
+   justify-content: space-between;
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-size: smaller;
+   font-weight: 300;
 
- .header{
-    font-family: "Montserrat", sans-serif;
-    font-size: large;
-    font-weight: 300;
-    display: inline-block;
-    vertical-align: auto;
-    align-items: end;
-    justify-content: end;
-    
+}
 
- }
- .img-fluid{
-    display: inline-block;
-    width: 2.5rem;
-    
-    
- }
+.contenedor {
+   display: flex;
+   align-items: center;
+   margin-left: 9rem;
+   margin-right: 40rem;
+}
 
- .carrousel{
-    width: 100%;
-    height: 60rem; /* Altura del carrusel, ajusta según tus necesidades */
-    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    position: relative;
-    z-index: 1; 
- }
-
- .div-qs{
-    width: 100%;
-    height: 35rem;
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-   
-
-
- }
- .t1{
-    
-    padding: 6rem;
-    font-size: x-large;
- }
-
-
-
-.card{
-    background-color: rgb(19, 149, 224);
-    width: 50%;
-    height: 22rem;
-    margin: 20px;
-    border-radius: 0%;
+.header {
+   font-family: "Montserrat", sans-serif;
+   font-size: large;
+   font-weight: 300;
+   display: inline-block;
+   vertical-align: auto;
+   align-items: end;
+   justify-content: end;
 
 
 }
 
-.img-card{
-    height: 13rem;
-    width: 100%;
+.img-fluid {
+   display: inline-block;
+   width: 2.5rem;
+
+
 }
- .txt-cont{
-    background-color: black;
-    width: 100%;
-    height: 30rem;
-    display: flex;
 
- }
- .txt1{
-    width:100%;
-    height: 50rem;
-    color: white;
-    flex: 1;
-    margin: 20px;
-    text-align: start;
-
-    
-   
- }
-
- p{
-    width: 80%;
-    margin: 30px;
-    margin-top: 5px;
- }
-
- .div-icon{
+.carrousel {
    width: 100%;
-   height: 2.5rem;
+   height: 60rem;
+   /* Altura del carrusel, ajusta según tus necesidades */
+   background-size: cover;
+   /* Ajusta la imagen para cubrir completamente el contenedor */
+   background-position: center;
+   /* Centra la imagen en el contenedor */
+   position: relative;
+   z-index: 1;
+}
+
+
+
+
+
+
+.card {
    background-color: rgb(19, 149, 224);
-   padding: 3px;
-   
+   width: 50%;
+   height: 22rem;
+   margin: 20px;
+   border-radius: 0%;
 
- }
 
- .form{
+}
+
+.img-card {
+   height: 13rem;
    width: 100%;
- }
+}
 
- .display{
+
+
+
+
+p {
+   width: 80%;
+   margin: 30px;
+   margin-top: 5px;
+}
+
+
+
+.form {
+   width: 100%;
+}
+
+.display {
    text-align: start;
    height: 10rem;
- }
- .d-flex{
+}
+
+.d-flex {
    margin: 8px;
    margin-left: 0px;
    padding: 5px;
    padding-left: 0px;
- }
+}
 
-.cont{
+.cont {
    display: flex;
    width: 7%;
-   
+
 }
 
-.btn1{
-   flex: 1;
-
-   margin: 8px;
-   margin-left: 0px;
-   background-color: rgb(19, 149, 224) ;
-   width: 5rem;
-   height: 2rem;
-   border-radius: 0;
-   text-align: left;
-   align-self: center;
+.btn1 {
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+   border-radius: 5px;
+   margin-top: 10px;
    font-family: "Montserrat", sans-serif;
 
-   
+
 }
 
 
 
-.footer{
-   margin-top: 10rem;
-   width: 100%;
-   background-color: rgb(19, 149, 224) ;
-   height: 5rem;
+.content {
+   flex: 1;
+   padding: 20px;
 }
 
-.container-txt{
+
+footer {
+   background-color: rgb(19, 149, 224);
+   color: white;
+   text-align: center;
+   padding: 15px 10px;
+   margin-top: 50px;
+}
+
+.footer-icons i {
+   margin: 0 10px;
+   font-size: 20px;
+   color: white;
+   cursor: pointer;
+   transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+   color: #333;
+}
+
+.placeholder{
+   height: 10px;
+}
+
+.container-txt {
    display: flex;
    width: 100%;
    height: 5rem;
 }
 
-.div-vc{
+.div-vc {
    flex: 1;
    text-align: left;
    align-self: center;
@@ -188,11 +193,230 @@ body{
    font-size: x-large;
 }
 
-.fa-brands{
+.fa-brands {
    margin: 8px;
 }
-.btn2{
+
+.btn2 {
    background-color: rgba(0, 0, 0, 0);
    color: white;
 }
 
+#carouselExampleDesktop .carousel-inner img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+
+#carouselExampleMobile .carousel-inner img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+   #carouselExampleMobile .carousel-inner {
+      height: 350px;
+   }
+
+   #carouselExampleMobile .carousel-item {
+      height: 350px;
+   }
+
+   #carouselExampleMobile .carousel-inner img {
+      height: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+
+   .txt-cont {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+
+
+   .txt-cont p {
+      all: unset;
+      font-size: 1rem;
+      margin: 10px 0;
+      line-height: 1.5;
+      color: white;
+      text-align: center;
+      justify-content: center;
+   }
+
+}
+
+
+#div-icon-mobile {
+   display: none;
+}
+
+#div-icon-desktop {
+   display: block;
+}
+
+@media (max-width: 768px) {
+   #div-icon-mobile {
+      display: block;
+   }
+
+   #div-icon-desktop {
+      display: none;
+   }
+}
+
+
+.prueba {
+   background-color: aliceblue;
+   width: 100%;
+   height: 50rem;
+}
+
+
+
+.div-qs {
+   width: 100%;
+
+   background-color: black;
+   text-align: center;
+   color: white;
+   font-family: "Montserrat", sans-serif;
+
+
+
+}
+
+.mb-3 label {
+   color: white;
+   font-family: "Montserrat", sans-serif;
+}
+
+.t1 {
+   color: white;
+   font-family: "Montserrat", sans-serif;
+   padding: 6rem;
+   font-size: x-large;
+}
+
+.txt-cont {
+   background-color: black;
+   width: 100%;
+   height: 30rem;
+   display: flex;
+
+}
+
+.txt1 {
+   width: 100%;
+   height: 50rem;
+   color: white;
+   flex: 1;
+   margin: 20px;
+   text-align: start;
+
+
+
+}
+
+.div-icon {
+   width: 100%;
+   height: 2.5rem;
+   background-color: rgb(19, 149, 224);
+   padding: 3px;
+
+
+}
+
+@media(max-width: 768px) {
+   .div-qs {
+      all: unset;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      
+   }
+
+   .txt-cont {
+      all: unset;
+      background-color: black;
+
+   }
+
+   .txt1 {
+      all: unset;
+      width: 100%;
+      height: 50rem;
+      color: white;
+      flex: 1;
+      margin: 20px;
+      text-align: start;
+
+
+   }
+}
+
+.container {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+
+.row {
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+}
+
+.card-img-top {
+   object-fit: cover;
+   height: 200px;
+   width: 100%;
+}
+
+.card {
+   width: 100%;
+
+}
+
+.card-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.carousel-inner {
+   display: flex;
+   align-items: start;
+ }
+ 
+
+ 
+ .carousel-img {
+   width: 100%; /* Ocupa el 100% del contenedor */
+   height: auto; /* Mantiene la proporción */
+   margin: 0; /* Elimina márgenes */
+   padding: 0; /* Elimina paddings */
+   border: none; /* Asegúrate de que no haya bordes */
+   object-fit: cover; /* Escala la imagen para cubrir el contenedor sin distorsión */
+ }
+ 
+
+ .carrousel{
+   padding: 0;
+   margin: 0;
+
+ }
+
+ @media(max-width: 768px){
+   .div-icon{
+      margin-top: 50px;
+   }
+
+ }
