@@ -386,10 +386,18 @@ footer {
 .card-body {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start; 
    align-items: center;
    text-align: center;
+   height: 20rem; 
 }
+
+.card-title {
+   margin: 0; 
+
+   position: relative; 
+}
+
 
 .carousel-inner {
    display: flex;
@@ -399,12 +407,12 @@ footer {
 
  
  .carousel-img {
-   width: 100%; /* Ocupa el 100% del contenedor */
-   height: auto; /* Mantiene la proporción */
-   margin: 0; /* Elimina márgenes */
-   padding: 0; /* Elimina paddings */
-   border: none; /* Asegúrate de que no haya bordes */
-   object-fit: cover; /* Escala la imagen para cubrir el contenedor sin distorsión */
+   width: 100%; 
+   height: auto; 
+   margin: 0; 
+   padding: 0;
+   border: none; 
+   object-fit: cover; 
  }
  
 
